@@ -17,41 +17,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class=>
-      <div class="rating">
-        <div class="ranking">
-          <span><img src="images/icon-star.svg" alt="star" class="star" /></span>
-          <h1>How did we do?</h1>
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-          <div class="numbers">
-            <div class="circle-numbers">
-              <input type="radio" id="1" name="1" value="1" />
-              <label for="1">1</label>
-            </div>
-            <div class="circle-numbers">
-              <input type="radio" id="2" name="2" value="2" />
-              <label for="2">2</label>
-            </div>
-            <div class="circle-numbers">
-              <input type="radio" id="3" name="3" value="3" />
-              <label for="3">3</label>
-            </div>
-            <div class="circle-numbers">
-              <input type="radio" id="4" name="4" value="4" />
-              <label for="4">4</label>
-            </div>
-            <div class="circle-numbers">
-              <input type="radio" id="5" name="5" value="5" />
-              <label for="5">5</label>
-            </div>
-          </div>
-          <button type="submit">Submit</button>
+    <div class="rating">
+      <div class="ranking">
+        <img src="images/icon-star.svg" alt="star" class="star" />
+        <h1>How did we do?</h1>
+        <p class="message">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="numbers">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
         </div>
+        <button class="submit" id="submit">Submit</button>
       </div>
-    </main>
+    </div>
 
     <script src="app.js"></script>
   </body>
