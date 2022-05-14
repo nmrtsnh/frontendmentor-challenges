@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="rating">
-      <div class="ranking">
+      <div id="ranking">
         <div class="star">
           <img src="images/icon-star.svg" alt="star" class="star" />
         </div>
@@ -28,8 +28,8 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <p id="error-message" class="error-message">Please select a score!</p>
-          <div class="numbers">
+          <p id="error-message" class="error-message display-none">Please select a score!</p>
+          <div class="buttons">
             <button>1</button>
             <button>2</button>
             <button>3</button>
@@ -39,15 +39,16 @@
           <button class="submit" id="submit">Submit</button>
         </div>
       </div>
-      <div id="evaluation" class="thank-you">
-        <div>
+      <div id="evaluation" class="thank-you display-none">
+        <div class="body">
           <img src="images/illustration-thank-you.svg" />
+        </div>
           <div>
             <span id="select-message" class="select-message"
               >You selected <span id="selected-number"></span>
             </span>
-          </div class="body">
-          <h1>Thank You!</h1>
+          </div >
+          <h1 class="heading">Thank You!</h1>
           <p>
             We appreciate you taking the time to give. If you ever need more
             support, don't hesitate to get in touch!
