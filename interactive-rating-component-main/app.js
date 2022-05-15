@@ -28,3 +28,15 @@ function removeErrorMessage() {
     btn.classList.remove("error");
   });
 }
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    removeSelect();
+  });
+});
+
+function removeSelect() {
+  (btn) => {
+    btn.classList.remove("selected");
+  };
+}

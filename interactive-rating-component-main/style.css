@@ -71,10 +71,14 @@ div.star {
   transition: all 500ms;
   cursor: pointer;
 }
-rating .buttons button.error {
-  border: 1px solid rgb(17, 0, 255);
+.rating .buttons button.error {
+  border: 1px solid red;
 }
 
+.rating .buttons button.selected {
+  background: #fb7413;
+  color: white;
+}
 .rating .submit {
   font-family: "Overpass", sans-serif;
   font-size: 1.2rem;
