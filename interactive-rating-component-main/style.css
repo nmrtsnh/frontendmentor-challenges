@@ -48,7 +48,9 @@ div.star {
   border-radius: 30px;
   padding: 35px;
 }
-
+.rating h1 {
+  font-size: 1.2rem;
+}
 .rating p {
   color: #959eac;
   /* padding: 10px 15px;
@@ -63,10 +65,11 @@ div.star {
 }
 .rating .body h1 {
   margin-top: 2rem;
-  color: yellow;
 }
-.rating p.message {
-  color: #e60f7a;
+.rating .body p {
+  color: #959eac;
+}
+.rating .body p.message {
   margin-bottom: 20px;
 }
 

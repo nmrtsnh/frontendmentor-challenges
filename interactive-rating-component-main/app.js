@@ -19,8 +19,8 @@ submit.addEventListener("click", (e) => {
   evaluation.classList.remove("display-none");
 });
 
-buttons.forEach((button) => {
-  button.addEventListener("click", (e) => {
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
     removeSelect();
     selected = e.target.textContent;
     e.target.classList.add("selected");
@@ -42,7 +42,7 @@ function removeErrorMessage() {
 }
 
 function removeSelect() {
-  (btn) => {
+  buttons.forEach((btn) => {
     btn.classList.remove("selected");
-  };
+  });
 }
