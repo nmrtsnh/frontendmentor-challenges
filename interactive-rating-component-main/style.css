@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
-div {
+/* div {
   display: box;
-}
-html {
+} */
+/* html {
   display: box;
-}
+} */
 body {
   font-family: "Overpass", sans-serif;
   background: #121417;
@@ -25,18 +26,37 @@ div.star {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
+
 .rating {
   max-width: 550px;
   height: 550px;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: hsl(279, 12%, 54%);
   border-radius: 30px;
   padding: 35px;
 }
+
+.rating p {
+  color: #959eac;
+  /* padding: 10px 15px;
+  margin-top: 1rem;
+  margin-bottom: 1.1rem;
+  font-weight: 400; */
+}
+
 .rating .body {
   margin-top: 15px;
   color: black;
@@ -55,9 +75,6 @@ div.star {
   justify-content: space-between;
   margin-top: 60px;
   margin-bottom: 50px;
-  /* flex-direction: row;
-  padding: 30px;
-  font-size: 2rem; */
 }
 
 .rating .buttons button {
@@ -70,9 +87,17 @@ div.star {
   border: none;
   transition: all 500ms;
   cursor: pointer;
+  -webkit-transition: all 500ms;
 }
 .rating .buttons button.error {
   border: 1px solid red;
+}
+
+.rating .buttons button:hover {
+  background: #4e5f73;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  border-radius: 0;
 }
 
 .rating .buttons button.selected {
@@ -127,14 +152,6 @@ div.star {
 .heading {
   margin-top: 3rem;
   color: green;
-}
-
-.rating p {
-  color: orange;
-  padding: 10px 15px;
-  margin-top: 1rem;
-  margin-bottom: 1.1rem;
-  font-weight: 400;
 }
 
 .display-none {

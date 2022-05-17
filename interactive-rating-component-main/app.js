@@ -12,7 +12,19 @@ submit.addEventListener("click", (e) => {
     setTimeout(() => {
       removeErrorMessage();
     }, 3000);
+    return;
   }
+  selectedMsg.textContent = `You selected ${selected} out of 5 `;
+  ranking.classList.add("display-none");
+  evaluation.classList.remove("display-none");
+});
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    removeSelect();
+    selected = e.target.textContent;
+    e.target.classList.add("selected");
+  });
 });
 
 function addErrorMessage() {
@@ -28,12 +40,6 @@ function removeErrorMessage() {
     btn.classList.remove("error");
   });
 }
-
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    removeSelect();
-  });
-});
 
 function removeSelect() {
   (btn) => {
