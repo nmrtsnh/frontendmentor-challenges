@@ -1,64 +1,84 @@
-/* .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
 }
+
 .attribution a {
   color: white;
-} */
-/* * {
+  font-weight: bold;
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(277, 64%, 61%);
+}
+.attribution p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+div {
+  display: block;
+}
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: 400;
+}
 main {
   display: flex;
   min-width: 600px;
-  /* max-width: 1000px; */
   z-index: 1;
   margin: 1em;
-  background-color: hsl(244, 38%, 16%);
-  /* height: 550px;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  right: 20%;
-  /* transform: translate(-50%, -50%); */
-  /* padding: 10px; */
 }
 
-.card {
+section {
   background-color: hsl(244, 38%, 16%);
   display: flex;
   flex-direction: column;
-}
-
-body {
-  background-color: hsl(233, 47%, 7%);
-}
-
-.card-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5.85em 7em 5.85em 5.85em;
+  width: 570px;
+  min-width: 300px;
 }
 
 .card-heading {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.25rem;
+  margin-bottom: 0.75em;
 }
 
 .card-heading span {
   color: hsl(277, 64%, 61%);
 }
 
-.card-content p {
+section .card-lead {
   color: hsla(0, 0%, 100%, 0.75);
-  font-size: 15px;
-  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 5em;
+}
+.card-content {
+  margin-right: 2em;
 }
 
 .card-content h2 {
@@ -66,8 +86,35 @@ body {
   font-weight: 400;
 }
 
-.card-content ul {
+section ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  letter-spacing: 1px;
+}
+section li {
+  display: list-item;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card-image {
+  width: 540px;
+  min-height: 10em;
+  min-width: 200px;
+  background-size: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  background-image: url(images/image-header-desktop.jpg);
+}
+
+.overlay {
+  background: hsl(277deg, 100%, 50%, 0.42);
+  height: 100%;
+}
+
+.overlay-2 {
+  background: hsl(293deg, 42%, 35%, 0.24);
+  height: 100%;
+  mix-blend-mode: color-burn;
 }
