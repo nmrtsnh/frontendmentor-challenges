@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400&display=swap");
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: red;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  height: 10vh;
+  padding: 6rem -1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  line-height: 1.5;
+  background-color: hsl(273, 75%, 66%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: bold;
+}
+
+.container-box {
+  background-color: white;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+.question-answer {
+  visibility: hidden;
+}
+
+.question-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-images-dsktop {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.woman-online-desktop {
+  position: relative;
+  top: 0px;
+  left: 0;
+}
+.bg-pattern-desktop {
+  width: 100%;
+  height: 100%;
+  /* margin-right: 10%; */
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  right: 10px;
+}
+
+.questions button {
+  background-color: pink;
+  margin-top: 1rem;
+}
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+.questions h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: black;
+  margin: 2.5rem;
+  text-align: left;
+}
+
+.questions {
+  padding: 1.5rem;
+  border-bottom: 2px solid;
+}
